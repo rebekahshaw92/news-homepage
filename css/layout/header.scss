@@ -1,0 +1,22 @@
+.hamburgerClose {
+    margin: 5%;
+}
+
+.navbar {
+    margin-top: 5%;
+     @include media-breakpoint-up(lg){
+         margin: 5%;
+     }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+}

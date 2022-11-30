@@ -1,0 +1,85 @@
+$softRed: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$veryDarkBlue: hsl(240, 100%, 5%);
+$grayishBlue: hsl(233, 8%, 79%);
+
+body {
+  background-color: $off-white;
+}
+
+
+.headerMobile {
+  width: 90%;
+  margin: 5%;
+  margin-top: 8%;
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+}
+
+.headerDesktop {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+    width: 100%;
+    margin-left: 13%;
+    margin-top: 0;
+  }
+}
+
+.btnRead {
+  background-color: $softRed !important;
+  margin-left: 5%;
+  padding: 3%;
+  width: 45%;
+  letter-spacing: 0.3rem;
+  border-color: $softRed;
+  &:hover {
+    background-color: $veryDarkBlue !important;
+    border-color: $veryDarkBlue;
+  }
+  @include media-breakpoint-up(lg){
+    margin-top: 10%;
+    width: 60%;
+  }
+}
+
+.new {
+  background-color: $veryDarkBlue;
+  //margin: 5%;
+  margin-top: 15%;
+  height: 630px;
+  @include media-breakpoint-up(lg){
+    margin: 0;
+    margin-left: 16%;
+    width: 73%;
+  }
+}
+
+.newLine {
+  border: 2px solid $grayishBlue;
+  margin: 5%;
+}
+
+.retroImage {
+ // margin: 10%;
+  margin-top: 30%;
+  width: 130px;
+ // margin-left: 16%;
+  @include media-breakpoint-up(lg){
+    margin-top: 40%;
+    margin-left: 35%;
+    width: 110px;
+  }
+}
+
+.laptopImage {
+ margin-top: 10%;
+  width: 130px;
+ // margin-left: 16%;
+  @include media-breakpoint-up(lg){
+    margin-top: 40%;
+    margin-left: 35%;
+    width: 110px;
+  }
+}
